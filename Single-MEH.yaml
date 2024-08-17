@@ -1,0 +1,796 @@
+version: 1.9.0
+name: single-meh5
+deployment:
+    netChar:
+        latency: 50
+        latencyVariation: 10
+        latencyDistribution: Normal
+        throughputDl: 1000
+        throughputUl: 1000
+        throughput: null
+        packetLoss: null
+    connectivity:
+        model: OPEN
+    d2d:
+        d2dMaxDistance: 100
+        disableD2dViaNetwork: null
+    domains:
+        -
+            id: PUBLIC
+            name: PUBLIC
+            type: PUBLIC
+            netChar:
+                latency: 6
+                latencyVariation: 2
+                throughputDl: 1000
+                throughputUl: 1000
+                latencyDistribution: null
+                throughput: null
+                packetLoss: null
+            zones:
+                -
+                    id: PUBLIC-COMMON
+                    name: PUBLIC-COMMON
+                    type: COMMON
+                    netChar:
+                        latency: 5
+                        latencyVariation: 1
+                        throughputDl: 1000
+                        throughputUl: 1000
+                        latencyDistribution: null
+                        throughput: null
+                        packetLoss: null
+                    networkLocations:
+                        -
+                            id: PUBLIC-COMMON-DEFAULT
+                            name: PUBLIC-COMMON-DEFAULT
+                            type: DEFAULT
+                            netChar:
+                                latency: 1
+                                latencyVariation: 1
+                                throughputDl: 1000
+                                throughputUl: 1000
+                                latencyDistribution: null
+                                throughput: null
+                                packetLoss: null
+                            terminalLinkLatency: null
+                            terminalLinkLatencyVariation: null
+                            terminalLinkThroughput: null
+                            terminalLinkPacketLoss: null
+                            meta: null
+                            userMeta: null
+                            cellularPoaConfig: null
+                            poa4GConfig: null
+                            poa5GConfig: null
+                            poaWifiConfig: null
+                            geoData: null
+                            physicalLocations: null
+                    interFogLatency: null
+                    interFogLatencyVariation: null
+                    interFogThroughput: null
+                    interFogPacketLoss: null
+                    interEdgeLatency: null
+                    interEdgeLatencyVariation: null
+                    interEdgeThroughput: null
+                    interEdgePacketLoss: null
+                    edgeFogLatency: null
+                    edgeFogLatencyVariation: null
+                    edgeFogThroughput: null
+                    edgeFogPacketLoss: null
+                    meta: null
+                    userMeta: null
+            interZoneLatency: null
+            interZoneLatencyVariation: null
+            interZoneThroughput: null
+            interZonePacketLoss: null
+            meta: null
+            userMeta: null
+            cellularDomainConfig: null
+        -
+            id: c404140f-26de-4a91-bfd5-cd8b3fc4dcbd
+            name: operator1
+            type: OPERATOR
+            netChar:
+                latency: 6
+                latencyVariation: 1
+                throughputDl: 1000
+                throughputUl: 1000
+                latencyDistribution: null
+                throughput: null
+                packetLoss: null
+            zones:
+                -
+                    id: operator1-COMMON
+                    name: operator1-COMMON
+                    type: COMMON
+                    netChar:
+                        latency: 5
+                        latencyVariation: 1
+                        throughputDl: 1000
+                        throughputUl: 1000
+                        latencyDistribution: null
+                        throughput: null
+                        packetLoss: null
+                    networkLocations:
+                        -
+                            id: operator1-COMMON-DEFAULT
+                            name: operator1-COMMON-DEFAULT
+                            type: DEFAULT
+                            netChar:
+                                latency: 1
+                                latencyVariation: 1
+                                throughputDl: 1000
+                                throughputUl: 1000
+                                latencyDistribution: null
+                                throughput: null
+                                packetLoss: null
+                            terminalLinkLatency: null
+                            terminalLinkLatencyVariation: null
+                            terminalLinkThroughput: null
+                            terminalLinkPacketLoss: null
+                            meta: null
+                            userMeta: null
+                            cellularPoaConfig: null
+                            poa4GConfig: null
+                            poa5GConfig: null
+                            poaWifiConfig: null
+                            geoData: null
+                            physicalLocations: null
+                    interFogLatency: null
+                    interFogLatencyVariation: null
+                    interFogThroughput: null
+                    interFogPacketLoss: null
+                    interEdgeLatency: null
+                    interEdgeLatencyVariation: null
+                    interEdgeThroughput: null
+                    interEdgePacketLoss: null
+                    edgeFogLatency: null
+                    edgeFogLatencyVariation: null
+                    edgeFogThroughput: null
+                    edgeFogPacketLoss: null
+                    meta: null
+                    userMeta: null
+                -
+                    id: e52ba555-607f-4783-b355-b5bebf7e3402
+                    name: zone1
+                    type: ZONE
+                    netChar:
+                        latency: 5
+                        latencyVariation: 5
+                        throughputDl: 1000
+                        throughputUl: 1000
+                        latencyDistribution: null
+                        throughput: null
+                        packetLoss: null
+                    meta:
+                        display.map.color: ""
+                    networkLocations:
+                        -
+                            id: zone1-DEFAULT
+                            name: zone1-DEFAULT
+                            type: DEFAULT
+                            netChar:
+                                latency: 1
+                                latencyVariation: 1
+                                throughputDl: 1000
+                                throughputUl: 1000
+                                latencyDistribution: null
+                                throughput: null
+                                packetLoss: null
+                            terminalLinkLatency: null
+                            terminalLinkLatencyVariation: null
+                            terminalLinkThroughput: null
+                            terminalLinkPacketLoss: null
+                            meta: null
+                            userMeta: null
+                            cellularPoaConfig: null
+                            poa4GConfig: null
+                            poa5GConfig: null
+                            poaWifiConfig: null
+                            geoData: null
+                            physicalLocations: null
+                        -
+                            id: bf713419-02bb-44aa-b22d-17922b821f8d
+                            name: wifi1
+                            type: POA-WIFI
+                            netChar:
+                                latency: 4
+                                latencyVariation: 1
+                                throughputDl: 1000
+                                throughputUl: 1000
+                                latencyDistribution: null
+                                throughput: null
+                                packetLoss: null
+                            poaWifiConfig:
+                                macId: '8021'
+                            geoData:
+                                location:
+                                    type: Point
+                                    coordinates:
+                                        - 10.398812
+                                        - 43.716694
+                                radius: 200
+                                path: null
+                                eopMode: null
+                                velocity: null
+                                d2dInRange: null
+                                poaInRange: null
+                            physicalLocations:
+                                -
+                                    id: c26aa431-e483-42ae-937d-8f92282f03be
+                                    name: ue1
+                                    type: UE
+                                    geoData:
+                                        location:
+                                            type: Point
+                                            coordinates:
+                                                - 10.39498
+                                                - 43.715595
+                                        path:
+                                            type: LineString
+                                            coordinates:
+                                                -
+                                                    - 10.39498
+                                                    - 43.715595
+                                                -
+                                                    - 10.396627
+                                                    - 43.71613
+                                                -
+                                                    - 10.398521
+                                                    - 43.71652
+                                                -
+                                                    - 10.39975
+                                                    - 43.716614
+                                                -
+                                                    - 10.400271
+                                                    - 43.71662
+                                                -
+                                                    - 10.401577
+                                                    - 43.716415
+                                                -
+                                                    - 10.402133
+                                                    - 43.716255
+                                                -
+                                                    - 10.404729
+                                                    - 43.715527
+                                                -
+                                                    - 10.406382
+                                                    - 43.714867
+                                                -
+                                                    - 10.408538
+                                                    - 43.713905
+                                                -
+                                                    - 10.409267
+                                                    - 43.713356
+                                                -
+                                                    - 10.409429
+                                                    - 43.709972
+                                                -
+                                                    - 10.407776
+                                                    - 43.71006
+                                                -
+                                                    - 10.407669
+                                                    - 43.710285
+                                                -
+                                                    - 10.407808
+                                                    - 43.7112
+                                                -
+                                                    - 10.407927
+                                                    - 43.711525
+                                                -
+                                                    - 10.407862
+                                                    - 43.712997
+                                                -
+                                                    - 10.405029
+                                                    - 43.71413
+                                                -
+                                                    - 10.402722
+                                                    - 43.71521
+                                                -
+                                                    - 10.4011345
+                                                    - 43.71569
+                                                -
+                                                    - 10.399429
+                                                    - 43.715805
+                                                -
+                                                    - 10.39797
+                                                    - 43.715603
+                                                -
+                                                    - 10.397047
+                                                    - 43.71527
+                                                -
+                                                    - 10.395736
+                                                    - 43.714733
+                                                -
+                                                    - 10.39498
+                                                    - 43.715595
+                                        eopMode: LOOP
+                                        velocity: 20
+                                        radius: null
+                                        d2dInRange: null
+                                        poaInRange: null
+                                    connected: true
+                                    wireless: true
+                                    wirelessType: 'wifi,5g,4g,other'
+                                    dataNetwork: {dnn: null, ladn: null, ecsp: null}
+                                    processes:
+                                        -
+                                            id: 2081a17f-2770-44b3-aff0-77141ad82809
+                                            name: vlc1
+                                            type: UE-APP
+                                            isExternal: true
+                                            externalConfig:
+                                                egressServiceMap:
+                                                    -
+                                                        name: my-service
+                                                        ip: 131.114.55.221
+                                                        port: 8080
+                                                        protocol: TCP
+                                                        meSvcName: null
+                                                ingressServiceMap: null
+                                            netChar:
+                                                throughputDl: 1000
+                                                throughputUl: 1000
+                                                latency: null
+                                                latencyVariation: null
+                                                latencyDistribution: null
+                                                throughput: null
+                                                packetLoss: null
+                                            image: null
+                                            environment: null
+                                            commandArguments: null
+                                            commandExe: null
+                                            serviceConfig: null
+                                            gpuConfig: null
+                                            memoryConfig: null
+                                            cpuConfig: null
+                                            status: null
+                                            userChartLocation: null
+                                            userChartAlternateValues: null
+                                            userChartGroup: null
+                                            meta: null
+                                            userMeta: null
+                                            appLatency: null
+                                            appLatencyVariation: null
+                                            appThroughput: null
+                                            appPacketLoss: null
+                                            placementId: null
+                                    netChar:
+                                        latencyDistribution: Normal
+                                        throughputDl: 1000
+                                        throughputUl: 1000
+                                        latency: null
+                                        latencyVariation: null
+                                        throughput: null
+                                        packetLoss: null
+                                    macId: '001'
+                                    isExternal: null
+                                    networkLocationsInRange: null
+                                    meta: null
+                                    userMeta: null
+                                    linkLatency: null
+                                    linkLatencyVariation: null
+                                    linkThroughput: null
+                                    linkPacketLoss: null
+                            terminalLinkLatency: null
+                            terminalLinkLatencyVariation: null
+                            terminalLinkThroughput: null
+                            terminalLinkPacketLoss: null
+                            meta: null
+                            userMeta: null
+                            cellularPoaConfig: null
+                            poa4GConfig: null
+                            poa5GConfig: null
+                        -
+                            id: 422d707c-70fc-4ba4-937b-7920b81d1762
+                            name: wifi2
+                            type: POA-WIFI
+                            netChar:
+                                latency: 4
+                                latencyVariation: 4
+                                throughputDl: 1000
+                                throughputUl: 1000
+                                latencyDistribution: null
+                                throughput: null
+                                packetLoss: null
+                            poaWifiConfig:
+                                macId: '8022'
+                            geoData:
+                                location:
+                                    type: Point
+                                    coordinates:
+                                        - 10.407782
+                                        - 43.713074
+                                radius: 200
+                                path: null
+                                eopMode: null
+                                velocity: null
+                                d2dInRange: null
+                                poaInRange: null
+                            terminalLinkLatency: null
+                            terminalLinkLatencyVariation: null
+                            terminalLinkThroughput: null
+                            terminalLinkPacketLoss: null
+                            meta: null
+                            userMeta: null
+                            cellularPoaConfig: null
+                            poa4GConfig: null
+                            poa5GConfig: null
+                            physicalLocations: null
+                    interFogLatency: null
+                    interFogLatencyVariation: null
+                    interFogThroughput: null
+                    interFogPacketLoss: null
+                    interEdgeLatency: null
+                    interEdgeLatencyVariation: null
+                    interEdgeThroughput: null
+                    interEdgePacketLoss: null
+                    edgeFogLatency: null
+                    edgeFogLatencyVariation: null
+                    edgeFogThroughput: null
+                    edgeFogPacketLoss: null
+                    userMeta: null
+                -
+                    id: 11157f6a-cd7f-44c0-a225-7075cd4c544e
+                    name: zone3
+                    type: ZONE
+                    netChar:
+                        latency: 5
+                        latencyVariation: 5
+                        throughputDl: 1000
+                        throughputUl: 1000
+                        latencyDistribution: null
+                        throughput: null
+                        packetLoss: null
+                    meta:
+                        display.map.color: ""
+                    networkLocations:
+                        -
+                            id: zone3-DEFAULT
+                            name: zone3-DEFAULT
+                            type: DEFAULT
+                            netChar:
+                                latency: 1
+                                latencyVariation: 1
+                                throughputDl: 1000
+                                throughputUl: 1000
+                                latencyDistribution: null
+                                throughput: null
+                                packetLoss: null
+                            physicalLocations:
+                                -
+                                    id: 333cca86-4786-4178-af02-a6a6a6515788
+                                    name: edge1
+                                    type: EDGE
+                                    connected: true
+                                    dataNetwork:
+                                        dnn: edn
+                                        ladn: null
+                                        ecsp: null
+                                    processes:
+                                        -
+                                            id: 11def4bb-ab69-4781-9f55-7af94590b278
+                                            name: mec-app
+                                            type: EDGE-APP
+                                            isExternal: true
+                                            externalConfig:
+                                                ingressServiceMap:
+                                                    -
+                                                        name: my-service
+                                                        port: 8080
+                                                        externalPort: 31000
+                                                        protocol: TCP
+                                                egressServiceMap: null
+                                            netChar:
+                                                throughputDl: 1000
+                                                throughputUl: 1000
+                                                latency: null
+                                                latencyVariation: null
+                                                latencyDistribution: null
+                                                throughput: null
+                                                packetLoss: null
+                                            image: null
+                                            environment: null
+                                            commandArguments: null
+                                            commandExe: null
+                                            serviceConfig: null
+                                            gpuConfig: null
+                                            memoryConfig: null
+                                            cpuConfig: null
+                                            status: null
+                                            userChartLocation: null
+                                            userChartAlternateValues: null
+                                            userChartGroup: null
+                                            meta: null
+                                            userMeta: null
+                                            appLatency: null
+                                            appLatencyVariation: null
+                                            appThroughput: null
+                                            appPacketLoss: null
+                                            placementId: null
+                                    netChar:
+                                        latencyDistribution: Normal
+                                        throughputDl: 1000
+                                        throughputUl: 1000
+                                        latency: null
+                                        latencyVariation: null
+                                        throughput: null
+                                        packetLoss: null
+                                    isExternal: null
+                                    geoData: null
+                                    networkLocationsInRange: null
+                                    wireless: null
+                                    wirelessType: null
+                                    meta: null
+                                    userMeta: null
+                                    linkLatency: null
+                                    linkLatencyVariation: null
+                                    linkThroughput: null
+                                    linkPacketLoss: null
+                                    macId: null
+                            terminalLinkLatency: null
+                            terminalLinkLatencyVariation: null
+                            terminalLinkThroughput: null
+                            terminalLinkPacketLoss: null
+                            meta: null
+                            userMeta: null
+                            cellularPoaConfig: null
+                            poa4GConfig: null
+                            poa5GConfig: null
+                            poaWifiConfig: null
+                            geoData: null
+                        -
+                            id: 6d1afc92-64ae-4d1f-a85f-2e97660ce8ec
+                            name: 5g1
+                            type: POA-WIFI
+                            netChar:
+                                latency: 20
+                                latencyVariation: 3
+                                throughputDl: 1000
+                                throughputUl: 1000
+                                latencyDistribution: null
+                                throughput: null
+                                packetLoss: null
+                            poaWifiConfig:
+                                macId: '51'
+                            geoData:
+                                location:
+                                    type: Point
+                                    coordinates:
+                                        - 10.398812
+                                        - 43.716694
+                                radius: 500
+                                path: null
+                                eopMode: null
+                                velocity: null
+                                d2dInRange: null
+                                poaInRange: null
+                            terminalLinkLatency: null
+                            terminalLinkLatencyVariation: null
+                            terminalLinkThroughput: null
+                            terminalLinkPacketLoss: null
+                            meta: null
+                            userMeta: null
+                            cellularPoaConfig: null
+                            poa4GConfig: null
+                            poa5GConfig: null
+                            physicalLocations: null
+                        -
+                            id: 334f100b-aabb-4677-883d-586824880020
+                            name: 5g2
+                            type: POA-WIFI
+                            netChar:
+                                latency: 20
+                                latencyVariation: 7
+                                throughputDl: 1000
+                                throughputUl: 1000
+                                latencyDistribution: null
+                                throughput: null
+                                packetLoss: null
+                            poaWifiConfig:
+                                macId: '52'
+                            geoData:
+                                location:
+                                    type: Point
+                                    coordinates:
+                                        - 10.407782
+                                        - 43.713074
+                                radius: 500
+                                path: null
+                                eopMode: null
+                                velocity: null
+                                d2dInRange: null
+                                poaInRange: null
+                            terminalLinkLatency: null
+                            terminalLinkLatencyVariation: null
+                            terminalLinkThroughput: null
+                            terminalLinkPacketLoss: null
+                            meta: null
+                            userMeta: null
+                            cellularPoaConfig: null
+                            poa4GConfig: null
+                            poa5GConfig: null
+                            physicalLocations: null
+                    interFogLatency: null
+                    interFogLatencyVariation: null
+                    interFogThroughput: null
+                    interFogPacketLoss: null
+                    interEdgeLatency: null
+                    interEdgeLatencyVariation: null
+                    interEdgeThroughput: null
+                    interEdgePacketLoss: null
+                    edgeFogLatency: null
+                    edgeFogLatencyVariation: null
+                    edgeFogThroughput: null
+                    edgeFogPacketLoss: null
+                    userMeta: null
+                -
+                    id: 18ced1a4-7580-4c41-b994-d44b9db0f1c1
+                    name: zone4
+                    type: ZONE
+                    netChar:
+                        latency: 5
+                        latencyVariation: 5
+                        throughputDl: 1000
+                        throughputUl: 1000
+                        latencyDistribution: null
+                        throughput: null
+                        packetLoss: null
+                    meta:
+                        display.map.color: ""
+                    networkLocations:
+                        -
+                            id: zone4-DEFAULT
+                            name: zone4-DEFAULT
+                            type: DEFAULT
+                            netChar:
+                                latency: 1
+                                latencyVariation: 1
+                                throughputDl: 1000
+                                throughputUl: 1000
+                                latencyDistribution: null
+                                throughput: null
+                                packetLoss: null
+                            physicalLocations:
+                                -
+                                    id: 8a7b7e6b-bd06-45a2-b0a6-8454ff712c96
+                                    name: edge2
+                                    type: EDGE
+                                    connected: true
+                                    dataNetwork:
+                                        dnn: edn
+                                        ladn: null
+                                        ecsp: null
+                                    netChar:
+                                        latencyDistribution: Normal
+                                        throughputDl: 1000
+                                        throughputUl: 1000
+                                        latency: null
+                                        latencyVariation: null
+                                        throughput: null
+                                        packetLoss: null
+                                    isExternal: null
+                                    geoData: null
+                                    networkLocationsInRange: null
+                                    wireless: null
+                                    wirelessType: null
+                                    meta: null
+                                    userMeta: null
+                                    processes: null
+                                    linkLatency: null
+                                    linkLatencyVariation: null
+                                    linkThroughput: null
+                                    linkPacketLoss: null
+                                    macId: null
+                            terminalLinkLatency: null
+                            terminalLinkLatencyVariation: null
+                            terminalLinkThroughput: null
+                            terminalLinkPacketLoss: null
+                            meta: null
+                            userMeta: null
+                            cellularPoaConfig: null
+                            poa4GConfig: null
+                            poa5GConfig: null
+                            poaWifiConfig: null
+                            geoData: null
+                        -
+                            id: 55ace233-a355-4fc9-a453-048e267b4b6e
+                            name: 4g1
+                            type: POA-WIFI
+                            netChar:
+                                latency: 9
+                                latencyVariation: 4
+                                throughputDl: 1000
+                                throughputUl: 1000
+                                packetLoss: 0.016
+                                latencyDistribution: null
+                                throughput: null
+                            poaWifiConfig:
+                                macId: '41'
+                            geoData:
+                                location:
+                                    type: Point
+                                    coordinates:
+                                        - 10.398812
+                                        - 43.716694
+                                radius: 1000
+                                path: null
+                                eopMode: null
+                                velocity: null
+                                d2dInRange: null
+                                poaInRange: null
+                            terminalLinkLatency: null
+                            terminalLinkLatencyVariation: null
+                            terminalLinkThroughput: null
+                            terminalLinkPacketLoss: null
+                            meta: null
+                            userMeta: null
+                            cellularPoaConfig: null
+                            poa4GConfig: null
+                            poa5GConfig: null
+                            physicalLocations: null
+                        -
+                            id: 859c5ae1-5938-4b99-8674-c773051f1413
+                            name: 4g2
+                            type: POA-4G
+                            netChar:
+                                latency: 17
+                                latencyVariation: 3
+                                throughputDl: 1
+                                throughputUl: 1
+                                packetLoss: 70
+                                latencyDistribution: null
+                                throughput: null
+                            poa4GConfig:
+                                cellId: '42'
+                            geoData:
+                                location:
+                                    type: Point
+                                    coordinates:
+                                        - 10.407782
+                                        - 43.713074
+                                radius: 1000
+                                path: null
+                                eopMode: null
+                                velocity: null
+                                d2dInRange: null
+                                poaInRange: null
+                            terminalLinkLatency: null
+                            terminalLinkLatencyVariation: null
+                            terminalLinkThroughput: null
+                            terminalLinkPacketLoss: null
+                            meta: null
+                            userMeta: null
+                            cellularPoaConfig: null
+                            poa5GConfig: null
+                            poaWifiConfig: null
+                            physicalLocations: null
+                    interFogLatency: null
+                    interFogLatencyVariation: null
+                    interFogThroughput: null
+                    interFogPacketLoss: null
+                    interEdgeLatency: null
+                    interEdgeLatencyVariation: null
+                    interEdgeThroughput: null
+                    interEdgePacketLoss: null
+                    edgeFogLatency: null
+                    edgeFogLatencyVariation: null
+                    edgeFogThroughput: null
+                    edgeFogPacketLoss: null
+                    userMeta: null
+            interZoneLatency: null
+            interZoneLatencyVariation: null
+            interZoneThroughput: null
+            interZonePacketLoss: null
+            meta: null
+            userMeta: null
+            cellularDomainConfig: null
+    interDomainLatency: null
+    interDomainLatencyVariation: null
+    interDomainThroughput: null
+    interDomainPacketLoss: null
+    meta: null
+    userMeta: null
+id: null
+description: null
+config: null
