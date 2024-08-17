@@ -1,5 +1,3 @@
-# MigraMEC-Testbed
-
 ## Overview
 
 This repository contains the blueprint for the MigraMEC testbed, including detailed steps and network scenarios. The scenarios are designed to be utilized within the AdvantEDGE emulator and include configurations like the one on the Arno river in Pisa.
